@@ -1,5 +1,6 @@
 # HA-CAMERA-KEYPAD
 automation:
+
 `
 alias: S- cam view toggle - keypad
 description: ""
