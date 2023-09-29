@@ -53,7 +53,7 @@ card:
   <summary>automation</summary>
 
 ```
-alias: S- cam view toggle - keypad
+alias: cam view toggle - keypad
 description: ""
 trigger:
   - platform: state
