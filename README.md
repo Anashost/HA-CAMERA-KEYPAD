@@ -8,6 +8,27 @@
 
 ### create the folowing:
 - `alarm_control_panel.unlock_camera` [how?](https://www.home-assistant.io/integrations/manual/)
+
+ <details>
+   <summary>my alarm sensor configs</summary>
+  
+```
+  - platform: manual
+    name: unlock Camera
+    code: !secret camera_code
+    code_arm_required: false
+    arming_time: 0.5
+    delay_time: 0.5
+    trigger_time: 5
+    disarmed:
+      trigger_time: 0
+    armed_home:
+      arming_time: 0
+      delay_time: 0
+```
+
+</details>
+
 - `input_boolean.show_cam_keypad` *from helpers*
 
 <details>
