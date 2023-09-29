@@ -5,9 +5,10 @@
 <!-- anashost_support_badges_end -->
 
 # HA-CAMERA-KEYPAD
-## create the folowing:
+
+### create the folowing:
 - `alarm_control_panel.unlock_camera` [how?](https://www.home-assistant.io/integrations/manual/)
-- `input_boolean.show_cam_keypad`
+- `input_boolean.show_cam_keypad` *from helpers*
 
 <details>
   <summary>keypad card</summary>
