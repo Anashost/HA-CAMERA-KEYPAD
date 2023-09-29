@@ -49,5 +49,3 @@ action:
             target:
               entity_id: input_boolean.show_cam_keypad
 mode: single
-
-```
