@@ -1,7 +1,7 @@
 # HA-CAMERA-KEYPAD
 ## create the folowing:
-- alarm_control_panel.unlock_camera
-- input_boolean.show_cam_keypad
+- `alarm_control_panel.unlock_camera`
+- `input_boolean.show_cam_keypad`
 
 <details>
   <summary>keypad card</summary>
@@ -23,7 +23,8 @@ card:
 
 <details>
   <summary>camera card</summary>
-
+ - replace camera.xxx with your camera entity.
+  
 ```
 type: conditional
 conditions:
