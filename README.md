@@ -6,7 +6,7 @@
 
 # HA-CAMERA-KEYPAD
 ## create the folowing:
-- `alarm_control_panel.unlock_camera`
+- `alarm_control_panel.unlock_camera` [how?](https://www.home-assistant.io/integrations/manual/)
 - `input_boolean.show_cam_keypad`
 
 <details>
