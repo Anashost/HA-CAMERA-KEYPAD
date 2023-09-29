@@ -1,7 +1,7 @@
 # HA-CAMERA-KEYPAD
 automation:
 
-`
+```
 alias: S- cam view toggle - keypad
 description: ""
 trigger:
@@ -50,4 +50,4 @@ action:
               entity_id: input_boolean.show_cam_keypad
 mode: single
 
-`
+```
