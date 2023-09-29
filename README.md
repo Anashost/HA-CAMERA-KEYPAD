@@ -4,15 +4,25 @@
 - input_boolean.show_cam_keypad
 
 <details>
-  <summary>automation</summary>
+  <summary>keypad card</summary>
 
 ```
+type: conditional
+conditions:
+  - entity: input_boolean.show_cam_keypad
+    state: 'on'
+card:
+  type: alarm-panel
+  states:
+    - arm_away
+  entity: alarm_control_panel.unlock_camera
+  name: Unlock Camera
 
 ```
 </details>
 
 <details>
-  <summary>automation</summary>
+  <summary>camera card</summary>
 
 ```
 type: conditional
