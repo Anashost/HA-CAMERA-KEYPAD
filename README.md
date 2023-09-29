@@ -1,3 +1,11 @@
+[![GitHub Latest Release][releases_shield]][latest_release]
+[![GitHub All Releases][downloads_total_shield]][releases]
+[![Community Forum][community_forum_shield]][community_forum]<!-- anashost_support_badges_start -->
+[![PayPal.Me][paypal_me_shield]][paypal_me]
+[![Revolut.Me][revolut_me_shield]][revolut_me]
+[![ko_fi][ko_fi_shield]][ko_fi_me]
+<!-- anashost_support_badges_end -->
+
 # HA-CAMERA-KEYPAD
 ## create the folowing:
 - `alarm_control_panel.unlock_camera`
@@ -96,3 +104,27 @@ mode: single
 ```
 
 </details>
+
+[latest_release]: https://github.com/Anashost/MY-HA-DASH/releases/latest
+
+[releases_shield]: https://img.shields.io/github/release/Anashost/MY-HA-DASH.svg?style=popout
+
+[releases]: https://github.com/Anashost/MY-HA-DASH/releases
+
+[downloads_total_shield]: https://img.shields.io/github/downloads/Anashost/MY-HA-DASH/total
+
+[community_forum_shield]: https://img.shields.io/static/v1.svg?label=%20&message=Forum&style=popout&color=41bdf5&logo=HomeAssistant&logoColor=white
+
+[community_forum]: https://github.com/Anashost/MY-HA-DASH/issues
+
+[paypal_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=PayPal&logo=paypal
+
+[paypal_me]: https://www.paypal.me/anashost
+
+[revolut_me_shield]: https://img.shields.io/static/v1.svg?label=%20&message=Revolut&logo=revolut
+
+[revolut_me]: https://revolut.me/anas4e
+
+[ko_fi_shield]: https://img.shields.io/static/v1.svg?label=%20&message=ByMeCoffee&logo=ko-fi
+
+[ko_fi_me]: https://ko-fi.com/anasbox
