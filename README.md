@@ -1,5 +1,23 @@
 # HA-CAMERA-KEYPAD
-automation:
+## create the folowing:
+- alarm_control_panel.unlock_camera
+- input_boolean.show_cam_keypad
+
+<details>
+  <summary>automation</summary>
+
+```
+
+```
+</details>
+
+<details>
+  <summary>automation</summary>
+
+```
+
+```
+</details>
 
 <details>
   <summary>automation</summary>
