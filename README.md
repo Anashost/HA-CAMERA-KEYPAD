@@ -15,7 +15,19 @@
   <summary>automation</summary>
 
 ```
-
+type: conditional
+conditions:
+  - entity: alarm_control_panel.unlock_camera
+    state: disarmed
+card:
+  camera_view: live
+  type: picture-glance
+  entities: []
+  aspect_ratio: 55%
+  camera_image: camera.xxx
+  theme: Mushroom Shadow
+  hold_action:
+    action: none
 ```
 </details>
 
