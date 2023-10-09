@@ -15,7 +15,7 @@
 ```
   - platform: manual
     name: unlock Camera
-    code: !secret camera_code
+    code: "1234"
     code_arm_required: false
     arming_time: 0.5
     delay_time: 0.5
