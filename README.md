@@ -7,7 +7,7 @@
 # HA-CAMERA-KEYPAD
 
 ### create the folowing:
-- `alarm_control_panel.unlock_camera` [how?](https://www.home-assistant.io/integrations/manual/)
+`alarm_control_panel.unlock_camera` [how?](https://www.home-assistant.io/integrations/manual/)
 
  <details>
    <summary>my alarm sensor configs</summary>
@@ -29,21 +29,27 @@
 
 </details>
 
-- `input_boolean.show_cam_keypad` *from helpers*
-
 <details>
   <summary>keypad card</summary>
 
 ```
 type: conditional
 conditions:
-  - entity: input_boolean.show_cam_keypad
-    state: 'on'
+  - entity: alarm_control_panel.unlock_camera
+    state: armed_away
 card:
-  type: alarm-panel
-  states:
-    - arm_away
+  type: custom:mushroom-alarm-control-panel-card
   entity: alarm_control_panel.unlock_camera
+  states:
+    - armed_away
+  double_tap_action:
+    action: none
+  hold_action:
+    action: none
+  tap_action:
+    action: none
+  show_keypad: true
+  primary_info: name
   name: Unlock Camera
 
 ```
@@ -70,60 +76,7 @@ card:
 ```
 </details>
 
-<details>
-  <summary>automation</summary>
 
-```
-alias: cam view toggle - keypad
-description: ""
-trigger:
-  - platform: state
-    entity_id:
-      - alarm_control_panel.unlock_camera
-    from: arming
-    to: armed_away
-    id: arm
-    for:
-      hours: 0
-      minutes: 0
-      seconds: 0
-  - platform: state
-    entity_id:
-      - alarm_control_panel.unlock_camera
-    from:
-      - armed_away
-      - armed_vacation
-      - armed_night
-      - armed_custom_bypass
-      - armed_home
-      - disarming
-    to: disarmed
-    id: disarm
-condition: []
-action:
-  - choose:
-      - conditions:
-          - condition: trigger
-            id:
-              - disarm
-        sequence:
-          - service: input_boolean.turn_off
-            data: {}
-            target:
-              entity_id: input_boolean.show_cam_keypad
-      - conditions:
-          - condition: trigger
-            id:
-              - arm
-        sequence:
-          - service: input_boolean.turn_on
-            data: {}
-            target:
-              entity_id: input_boolean.show_cam_keypad
-mode: single
-```
-
-</details>
 
 [latest_release]: https://github.com/Anashost/MY-HA-DASH/releases/latest
 
